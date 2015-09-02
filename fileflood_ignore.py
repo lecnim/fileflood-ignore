@@ -1,5 +1,5 @@
 """
- Fileflood plugin used to ignore files that match a pattern.
+Fileflood plugin used to ignore files that match a pattern.
 """
 
 from fileflood import debug
