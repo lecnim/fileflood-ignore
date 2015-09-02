@@ -4,8 +4,6 @@ Fileflood plugin used to ignore files that match a pattern.
 
 from fileflood import debug
 
-__version__ = '0.0.1.dev1'
-
 
 class Ignore:
     def __init__(self, *paths):
