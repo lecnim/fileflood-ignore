@@ -14,11 +14,25 @@ Installation
 Usage
 -----
 
+Ignore a specified file:
+
 .. code-block:: python
 
     from fileflood_ignore import Ignore
 
-    fileflood.use(Ignore('**/*.json'))
+    fileflood.use(
+        Ignore('posts/badger.md')
+    )
+
+Ignore all json files:
+
+.. code-block:: python
+
+    from fileflood_ignore import Ignore
+
+    fileflood.use(
+        Ignore('**/*.json')
+    )
 
 
 License
