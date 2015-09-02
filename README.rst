@@ -14,7 +14,7 @@ Installation
 Usage
 -----
 
-    .. code-block:: python
+.. code-block:: python
 
     from fileflood_ignore import Ignore
 
