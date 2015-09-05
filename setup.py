@@ -1,30 +1,30 @@
-from os.path import dirname
-from os.path import join
+import os
 from setuptools import setup
 
 
 def read(*path):
+    """Use this to read files from source directory"""
     with open(
-            join(dirname(__file__), *path),
+            os.path.join(os.path.dirname(__file__), *path),
             encoding="utf8"
     ) as fp:
         return fp.read()
 
 
 setup(
-    name="fileflood-ignore",
+    name="rucola-ignore",
     version='0.0.1',
     license="MIT",
 
-    description="A Fileflood plugin used to ignore files that match a pattern.",
+    description="A Rucola plugin used to ignore files that match a pattern.",
     long_description=read("README.rst") + '\n\n' + read("CHANGES.rst"),
 
     author="Kasper Minciel",
     author_email="kasper.minciel@gmail.com",
 
-    url="https://github.com/lecnim/fileflood-ignore",
+    url="https://github.com/lecnim/rucola-ignore",
 
-    py_modules=['fileflood_ignore'],
+    py_modules=['rucola_ignore'],
     include_package_data=True,
     zip_safe=False,
     test_suite='tests',
@@ -32,5 +32,5 @@ setup(
     classifiers=[
         "Environment :: Plugins"
     ],
-    install_requires=["fileflood"]
+    install_requires=["rucola"]
 )

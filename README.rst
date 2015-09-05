@@ -24,16 +24,17 @@ Ignore a specified file:
         Ignore('posts/badger.md')
     )
 
+Ignore many files at once:
+
+.. code-block:: python
+
+    Ignore('posts/badger.md', 'foo/bar.html')
+
 Ignore all json files:
 
 .. code-block:: python
 
-    from fileflood_ignore import Ignore
-
-    fileflood.use(
-        Ignore('**/*.json')
-    )
-
+    Ignore('**/*.json')
 
 License
 -------

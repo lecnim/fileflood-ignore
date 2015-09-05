@@ -1,13 +1,13 @@
 import os
 from unittest import TestCase
-from fileflood import Flood
-from fileflood_ignore import Ignore
+from rucola import Rucola
+from rucola_ignore import Ignore
 
 
 class Test(TestCase):
 
     def setUp(self):
-        self.app = Flood(os.path.dirname(__file__), source='src')
+        self.app = Rucola(os.path.dirname(__file__))
 
     def test_ignore_file(self):
 
@@ -24,4 +24,10 @@ class Test(TestCase):
         self.assertIsNone(self.app.get('a.json'))
         self.assertIsNone(self.app.get('data/fruits.json'))
 
+    def test_ignore_multiple(self):
 
+        self.app.use(
+            Ignore('a.json', 'data/fruits.json')
+        )
+        self.assertIsNone(self.app.get('a.json'))
+        self.assertIsNone(self.app.get('data/fruits.json'))
