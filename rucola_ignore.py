@@ -1,5 +1,5 @@
 """
-Fileflood plugin used to ignore files that match a pattern.
+Rucola plugin used to ignore files that match a pattern.
 """
 
 
