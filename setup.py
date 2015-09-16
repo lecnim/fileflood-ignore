@@ -17,7 +17,7 @@ setup(
     license="MIT",
 
     description="A Rucola plugin used to ignore files that match a pattern.",
-    long_description=read("README.rst") + '\n\n' + read("CHANGES.rst"),
+    long_description=read("README.rst"),
 
     author="Kasper Minciel",
     author_email="kasper.minciel@gmail.com",

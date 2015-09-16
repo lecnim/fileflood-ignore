@@ -2,6 +2,9 @@
 rucola-ignore
 =============
 
+.. image:: https://travis-ci.org/lecnim/rucola-ignore.svg?branch=master
+    :target: https://travis-ci.org/lecnim/rucola-ignore
+
 A Rucola plugin used to ignore files that match a pattern.
 
 Installation
@@ -9,7 +12,7 @@ Installation
 
 ::
 
-    pip install rucola-config
+    pip install rucola-ignore
 
 Usage
 -----
