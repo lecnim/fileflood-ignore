@@ -21,7 +21,7 @@ Ignore a specified file:
 
 .. code-block:: python
 
-    from rucola import Ignore
+    from rucola_ignore import Ignore
 
     rucola.use(
         Ignore('posts/badger.md')
